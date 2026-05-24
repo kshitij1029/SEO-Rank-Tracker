@@ -1,6 +1,7 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
-import { Search, BarChart3, History, LogOut, Menu, X, Target, Sun, Moon, ChartNoAxesColumnIcon } from "lucide-react";
+import { Search, BarChart3, History, LogOut, Menu, X, Sun, Moon, ChartNoAxesColumnIcon } from "lucide-react";
+// Target,
 import { useState } from "react";
 import { useApp } from "../context/AppContext";
 
@@ -21,7 +22,7 @@ export default function Navbar() {
     const navLinks = [
         { path: "/dashboard", label: "Dashboard", icon: <BarChart3 size={18} /> },
         { path: "/analyze", label: "Analyze", icon: <Search size={18} /> },
-        { path: "/rank-tracker", label: "Rank Tracker", icon: <Target size={18} /> },
+        // { path: "/rank-tracker", label: "Rank Tracker", icon: <Target size={18} /> },
         { path: "/history", label: "History", icon: <History size={18} /> },
     ];
 

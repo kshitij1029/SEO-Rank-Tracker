@@ -38,7 +38,7 @@ export default function App() {
                     <Route path="/analyze" element={<Analyze />} />
                     <Route path="/report/:id" element={<Report />} />
                     <Route path="/history" element={<History />} />
-                    <Route path="/rank-tracker" element={<RankTracker />} />
+                    {/* <Route path="/rank-tracker" element={<RankTracker />} /> */}
                     <Route path="/rank/:id" element={<RankDetail />} />
                 </Route>
             </Routes>
