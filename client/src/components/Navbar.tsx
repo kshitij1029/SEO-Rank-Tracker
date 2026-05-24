@@ -21,7 +21,7 @@ export default function Navbar() {
     const navLinks = [
         { path: "/dashboard", label: "Dashboard", icon: <BarChart3 size={18} /> },
         { path: "/analyze", label: "Analyze", icon: <Search size={18} /> },
-        { path: "/rank-tracker", label: "Rank Tracker", icon: <Target size={18} /> },
+        // { path: "/rank-tracker", label: "Rank Tracker", icon: <Target size={18} /> },
         { path: "/history", label: "History", icon: <History size={18} /> },
     ];
 
