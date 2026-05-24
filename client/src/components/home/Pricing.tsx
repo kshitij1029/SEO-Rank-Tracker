@@ -21,7 +21,7 @@ export default function Pricing() {
                             <span className="text-muted-foreground">/month</span>
                         </div>
                         <ul className="space-y-3 mb-8 flex-1">
-                            {["5 analyses per day", "Full SEO report", "Keyword analysis", "Issue detection", "Export results"].map((item) => (
+                            {["5 analyses per day", "Full SEO report", "Issue detection", "Export results"].map((item) => (
                                 <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
                                     <CheckCircle size={16} className="text-primary shrink-0" />
                                     {item}
@@ -44,7 +44,7 @@ export default function Pricing() {
                             <span className="text-muted-foreground">/month</span>
                         </div>
                         <ul className="space-y-3 mb-8 flex-1">
-                            {["Unlimited analyses", "Priority processing", "Competitor analysis", "Historical tracking", "API access", "Email reports"].map((item) => (
+                            {["Unlimited analyses", "Priority processing", "Keyword analysis", "Historical tracking", "API access", "Email reports"].map((item) => (
                                 <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
                                     <CheckCircle size={16} className="text-primary shrink-0" />
                                     {item}
