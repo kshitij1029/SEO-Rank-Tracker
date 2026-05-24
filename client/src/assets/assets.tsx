@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { BarChart3Icon, EyeIcon, FileSearchIcon, GlobeIcon, ShieldIcon, TargetIcon, TrendingUpIcon, ZapIcon } from "lucide-react";
+import { BarChart3Icon, EyeIcon, FileSearchIcon, GlobeIcon, ShieldIcon, History, TrendingUpIcon, ZapIcon } from "lucide-react";
 
 export const homeFeaturesData = [
     {
@@ -23,9 +23,9 @@ export const homeFeaturesData = [
         desc: "Ensure your site is accessible to all users with alt text, ARIA, and contrast checks.",
     },
     {
-        icon: <TargetIcon size={28} />,
-        title: "Keyword Analysis",
-        desc: "Discover top keywords, density analysis, and content optimization opportunities.",
+        icon: <History size={28} />,
+        title: "SEO History Tracking",
+        desc: "Track your SEO performance history with detailed reports and trend analysis over time.",
     },
     {
         icon: <TrendingUpIcon size={28} />,
