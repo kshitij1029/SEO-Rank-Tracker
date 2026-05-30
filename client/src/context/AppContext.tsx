@@ -1,6 +1,7 @@
 import type { AxiosInstance } from "axios";
 import axios from "axios";
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { toast } from "react-hot-toast/headless";
 
 interface User {
     id: string;
@@ -101,6 +102,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setToken(null);
         setUser(null);
         localStorage.removeItem("token");
+        return toast.success("Successfully Logged out");
     };
 
     const value = { user, token, loading, api, login, register, logout };

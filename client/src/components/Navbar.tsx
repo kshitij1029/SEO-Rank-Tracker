@@ -15,7 +15,6 @@ export default function Navbar() {
 
     const handleLogout = () => {
         logout();
-        return toast.success("Successfully Logged out");
         setTimeout(() => navigate("/"), 500);
         
     };
