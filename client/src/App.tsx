@@ -7,7 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Analyze from "./pages/Analyze";
 import Report from "./pages/Report";
 import History from "./pages/History";
-// import RankTracker from "./pages/RankTracker";
+import RankTracker from "./pages/RankTracker";
 import RankDetail from "./pages/RankDetail";
 import { Toaster } from "react-hot-toast";
 import { useApp } from "./context/AppContext";
@@ -38,7 +38,7 @@ export default function App() {
                     <Route path="/analyze" element={<Analyze />} />
                     <Route path="/report/:id" element={<Report />} />
                     <Route path="/history" element={<History />} />
-                    {/* <Route path="/rank-tracker" element={<RankTracker />} /> */}
+                    <Route path="/rank-tracker" element={<RankTracker />} />
                     <Route path="/rank/:id" element={<RankDetail />} />
                 </Route>
             </Routes>
