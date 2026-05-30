@@ -27,10 +27,11 @@ export default function Login({ state }: { state: string }) {
         }
 
         if (result.success) {
+            return toast.success(`Successfully ${isLoginState ? "logged in" : "registered"}`);
             const redirect = searchParams.get("redirect") || "/dashboard";
             navigate(redirect);
         } else {
-            toast.error(result.message || "Login failed");
+            return toast.error(result.message || "Login failed");
         }
         setLoading(false);
     };

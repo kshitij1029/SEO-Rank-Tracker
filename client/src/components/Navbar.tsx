@@ -4,6 +4,7 @@ import { Search, BarChart3, History, LogOut, Menu, X, Sun, Moon, Target, ChartNo
 
 import { useState } from "react";
 import { useApp } from "../context/AppContext";
+import { toast } from "react-hot-toast/headless";
 
 export default function Navbar() {
     const { user, logout } = useApp();
@@ -14,6 +15,7 @@ export default function Navbar() {
 
     const handleLogout = () => {
         logout();
+        return toast.success("Successfully Logged out");
         navigate("/");
     };
 
